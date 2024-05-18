@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <b>select your favorite color using dropdown link</b>
+    <select id="minelist" onchange="changeb()">
+        <option>--choose color--</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <script>
+        function changeb()
+        {
+            var col = document.getElementById("minelist").value;
+            document.body.style.backgroundColor=col;
+
+        }
+
+        </script>
+</form>
+</body>
+</html>
